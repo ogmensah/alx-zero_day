@@ -1,3 +1,4 @@
-git branch -m master main
+echo "git pull origin main" > up_to_date
 git add .
-git commit -m 'created main branch'
+git commit -m 'How to be up to date in git'
+git push
