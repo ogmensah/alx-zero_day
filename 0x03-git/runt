@@ -1,9 +1,17 @@
-mkdir bash c js
-touch c/c_is_fun.c js/main.js js/index.js
+git checkout -b update_script
+touch bash/98
 echo '#!/bin/bash' > bash/alx
-echo 'echo "ALX"' >> bash/alx
-echo -e '#!/bin/bash' > bash/school
-echo 'echo "School"' >> bash/school
+echo 'echo "ALX School"' >> bash/alx
+echo '#!/bin/bash' > bash/school
+echo 'echo "The school is open!"' >> bash/school
 git add .
-git commit -m 'Starting to code today, so cool'
+git commit -m 'My personal work'
+git push --set-upstream origin update_script
+
+git checkout master && \
+echo '#!/bin/bash' > bash/alx && \
+echo 'echo "ALX Schoo is so cool"' >> bash/alx && \
+git rm -r js && \
+git add . && \
+git commit -m 'Hot fix' && \
 git push
